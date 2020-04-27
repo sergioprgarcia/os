@@ -11,5 +11,7 @@ import com.sergio.os.domain.model.Cliente;
 public interface ClienteRepository extends JpaRepository<Cliente, Long> {
 	
 	List<Cliente> findByNome (String nome);
+	
+	Cliente findByEmail(String email);
 
 }
